@@ -37,7 +37,7 @@
   </style>
 </head>
 
-<body data-theme="soft">
+<body data-theme="dark">
 
   <canvas id="canvas" style="z-index:1.5;position: fixed;"></canvas>
   <header class="header position-fixed f-header position-absolute js-f-header navi bg-transparent" id="nav"
@@ -80,8 +80,8 @@
           </li>
           <li class="f-header__item">
             <div class="switch f-header__link f-header__link--icon">
-              <input type="checkbox" id="themeSwitch" class="switch__input cm-toggle" title="Turn on/of dark mode"><span
-                class="margin-left-xxs">Turn on/off dark mode</span>
+              <input type="checkbox" id="themeSwitch" class="switch__input cm-toggle" title="Change theme"><span
+                class="margin-left-xxs">Change theme</span>
               <div class="switch__marker" aria-hidden="true"></div>
             </div>
           </li>
@@ -129,9 +129,11 @@
                 <h2>Inauguration Ceremony</h2>
                 <ul class="list list--ul">
                   <li>Chief Guest: Mr. Deepak Rai, Founder, Codecraft.</li>
-                  <li>Guest of honor: Mr. Vivek Alva, Managing trustee.</li>
-                  <li>Presence: Dr. Kurian, Principal.</li>
-                  <li>Presence: Prof. Balakrishna Shetty, Administrative officer.</li>
+                  <li>Guest of honor: Mr. Vivek Alva, Managing trustee, Alva's Education Foundation.</li>
+                  <li>Presence: <ul class="list list--ul">
+                    <li>Dr. Kurian, Principal, Alva's Degree College.</li>
+                    <li>Prof. Balakrishna Shetty, Administrative officer, Alva's Degree College.</li>
+                  </ul></li>
                 </ul>
               </div>
             </div>
@@ -218,7 +220,7 @@
                   <li>Call of Duty Mobile event.</li>
                   <li>Teams must register with the registration button given below before 5<sup>th</sup> March 2022.
                   </li>
-                  <li>Entry Fee - 100 INR per team.</li>
+                  <li>Entry Fee - <span class="font-italic color-success">₹ 100</span> per team.</li>
                   <li>For more information, click the button below.</li>
                 </ul>
               </div>
@@ -288,8 +290,9 @@
                 <h2>Scavenger Hunt</h2>
                 <ul class="list list--ul">
                   <li>2 participants in a team.</li>
-                  <li>Participants will need to solve a Series of Puzzles and riddles in each round.</li>
                   <li>3 rounds.</li>
+                  <li>First 2 rounds are elimination rounds.</li>
+                  <li>Final round is treasure hunt.</li>
                 </ul>
               </div>
             </div>
@@ -462,13 +465,13 @@
 
         <div class="position-relative z-index-1 padding-y-xl">
           <h1 class="text-center">Register Here</h1>
-          <h3 class="text-left "">Things to know before you register...</h3>
+          <h3 class="text-left">Things to know before you register...</h3>
         <ul>
           <li>All events starts at exact time scheduled.</li>
           <li>It is mandatory for all participants to register before 09-March-2022.</li>
-          <li>Entry fees for each event is 20 INR and it needs to be paid on the day of the event (or else registrations won't be considered).</li>
+          <li>Entry fees for each event is <span class=" font-bold font-italic color-success-dark">₹ 20</span> and it needs to be paid on the day of the event (or else registrations won't be considered).</li>
           <li>If one event has the team of two members, only one member from the team should register.</li>
-          <li>One can participate in any number of events, but he/she should make sure that there won't be any clashes between the events.</li>
+          <li>One can participate in any number of events, but he/she should <span class="font-bold text-underline">make sure that there won't be any clashes between the events.</span></li>
           <li>For any queries, Please mail to <a href=" mailto:ignitra2k22@protonmail.com">
             ignitra2k22@protonmail.com</a></li>
             </ul>
@@ -737,8 +740,8 @@
   <!--Theme switch-->
   <script>
     document.getElementById('themeSwitch').addEventListener('change', function (event) {
-      (event.target.checked) ? document.body.setAttribute('data-theme', 'dark'): document.body.setAttribute(
-        'data-theme', 'soft');
+      (event.target.checked) ? document.body.setAttribute('data-theme', 'soft'): document.body.setAttribute(
+        'data-theme', 'dark');
     });
 
     //navbar
